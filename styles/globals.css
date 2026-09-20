@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0e0f11;
+  color: #e8e8e6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-form input {
+  background: #1a1c1f;
+  border: 1px solid #2c2e33;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #e8e8e6;
+  font-size: 14px;
+  width: 140px;
+  text-transform: uppercase;
+}
+
+.search-form button {
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: #1d4ed8;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.ticker-name {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.change-up {
+  color: #26a69a;
+  font-size: 15px;
+}
+
+.change-down {
+  color: #ef5350;
+  font-size: 15px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  background: #1a1c1f;
+  border: 1px solid #2c2e33;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.metric-label {
+  font-size: 12px;
+  color: #9a9a97;
+  margin-bottom: 4px;
+}
+
+.metric-value {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.chart-box {
+  background: #1a1c1f;
+  border: 1px solid #2c2e33;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: #9a9a97;
+  margin-top: 8px;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.status-msg {
+  color: #9a9a97;
+  font-size: 14px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.error-msg {
+  color: #ef5350;
+  font-size: 14px;
+  padding: 20px 0;
+}
